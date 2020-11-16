@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>error</title>
+</head>
+<body>
+    <h2>请求错误，请联系系统管理员！</h2>
+    错误信息:<font color="red" th:text="${exception}"></font><br>
+    请求地址:<font color="red" th:text="${url}"></font>
+</body>
+</html>

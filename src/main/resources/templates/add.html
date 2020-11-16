@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>添加用户</title>
+</head>
+<body>
+<div>
+    <form th:action="@{/user/addUser}" method="post">
+        [[#{user.name}]]：<input type="text" name="name" id="name"/><br>
+        [[#{user.age}]]：<input type="text" name="age" id="age"/><br>
+        [[#{user.address}]]：<input type="text" name="address" id="address"/><br>
+        [[#{user.sex}]]：<input type="radio" name="sex" value="1">[[#{user.man}]]</input><input type="radio" name="sex" value="2">[[#{user.wumen}]]</input><br>
+        <input type="submit" th:value="#{user.submit}"><br>
+    </form>
+</div>
+</body>
+</html>

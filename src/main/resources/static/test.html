@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax请求异常测试</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $.get("/ajaxexception",function (data) {
+                if(!data.success){
+                    console.log("错误信息："+data.exception);
+                    console.log("请求地址："+data.url);
+                }
+            },"json");
+        })
+    </script>
+</head>
+<body>
+
+</body>
+</html>
